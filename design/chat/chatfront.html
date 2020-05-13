@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+
+.button {
+  border-color: #ffc107;
+  background-color: #ffc107;
+}
+
+.send {
+  border-color: #aaa;
+  background-color: #aaa;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+</style>
+</head>
+<body>
+
+<h2>Chat Messages</h2>
+
+<div class="container">
+    <img src="D:\SW_New\Rockle\design\img\portfolio\cabin.png" alt="Avatar">
+  <p>안녕하세요?? 숲 속 오두막입니다.무엇이 궁금하신가요?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+    <img src="D:\SW_New\Rockle\design\img\rockle\wink.png" alt="Avatar" class="right">
+  <p>안녕하세요!인맥관리 비법과 화장품 회사 이직에 대해 알고 싶어요!!</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+    <img src="D:\SW_New\Rockle\design\img\portfolio\cabin.png" alt="Avatar">
+  <p>네! 좋습니다. 현재 관심있으신 분야가 어떻게 되시죠?</p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+    <img src="D:\SW_New\Rockle\design\img\rockle\wink.png" alt="Avatar" class="right">
+  <p>앗 저는 현재 ##화장품 연구원으로 재직하고 있습니다. 화장품 회사로 이직을 고민하고 있어요!!</p>
+  <span class="time-left">11:05</span>
+</div>
+
+<div class="container send">
+    <div class="input-group">
+        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..."  />
+                <button type="submit" class="container button" id="sendMessageButton" class="right">Send</button>
+        </span>
+    </div>
+</div>
+
+</body>
+</html>
